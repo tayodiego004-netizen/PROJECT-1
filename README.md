@@ -1,23 +1,43 @@
-# Emotion Detection Application
+# Final Project
 
-## Project Description
+## Emotion Detection Application
 
-This project is an Emotion Detection application developed using Python and the IBM Watson Natural Language Processing (NLP) library.
-
-The application analyzes text and identifies five emotions: anger, disgust, fear, joy, and sadness. It also determines the dominant emotion expressed in the text.
+This project implements an emotion detection application using IBM Watson Natural Language Processing services. It analyzes text and returns scores for anger, disgust, fear, joy, and sadness, along with the dominant emotion.
 
 ## Technologies Used
 
 - Python
 - Flask
-- IBM Watson NLP
-- Requests library
-- Unittest
+- IBM Watson NLP Emotion Prediction API
+- Requests
+- Pylint for static code analysis
+- Unit testing with unittest
 
-## Features
+## Application Features
 
-- Analyzes text to detect emotions.
-- Returns scores for five emotions.
+- Detects emotions from text input.
 - Identifies the dominant emotion.
-- Provides a web interface using Flask.
-- Includes error handling and unit testing.
+- Handles blank input and unsuccessful API responses.
+- Provides a Flask web endpoint for emotion detection.
+
+## How to Run
+
+Install the dependencies:
+
+```bash
+python -m pip install flask requests pylint
+```
+
+Run the application:
+
+```bash
+python server.py
+```
+
+## Static Code Analysis
+
+Run Pylint on the server file:
+
+```bash
+python -m pylint server.py
+```
